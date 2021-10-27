@@ -18,11 +18,12 @@ public class PhoneBookVer04
 			pi4.menuShow();
 			int choice = scanner.nextInt(); 
 			scanner.nextLine();
+			
 			switch(choice) {
 			case 1:
 				System.out.println("데이터 입력을 시작합니다..");
 				System.out.println("1.일반2.동창3.회사");
-				
+				System.out.println(">>선택");
 				pi4.dataInput(choice);
 				
 				break;

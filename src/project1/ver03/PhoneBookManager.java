@@ -88,7 +88,6 @@ public class PhoneBookManager
 		}
 		System.out.println("주소록이 출력되었습니다.");
 		
-		System.out.println(myPhoneInfo[numOfPhoneInfo]);
 	}
 }
 
