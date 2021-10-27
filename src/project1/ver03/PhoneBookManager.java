@@ -1,13 +1,14 @@
 package project1.ver03;
 
 import java.util.Scanner;
-
+import project1.ver03.PhoneInfo;
 
 public class PhoneBookManager
 {
 	
-	private PhoneInfo[] myPhoneInfo;
-	private int numOfPhoneInfo;
+	
+	public PhoneInfo[] myPhoneInfo;
+	public int numOfPhoneInfo;
 	
 	public PhoneBookManager () {
 		
@@ -36,10 +37,9 @@ public class PhoneBookManager
 		Scanner scan = new Scanner(System.in);
 		System.out.println("검색할 이름을 입력하세요:");
 		String searchName = scan.nextLine();
-		
 		for(int i=0 ; i<numOfPhoneInfo; i++) {
 			if(searchName.compareTo(myPhoneInfo[i].name)==0) {
-				//myPhoneInfo.showAllshow();
+				myPhoneInfo[i].showPhoneInfo();
 				System.out.println("찾는 정보가 있습니다.");
 				isFind = true;
 			}
@@ -74,6 +74,7 @@ public class PhoneBookManager
 			System.out.println("주소록("+ deleteIndex+"번)가 삭제되었습니다");
 		}
 	}
+	
 	//주소록 출력
 	public void dataAllshow() {
 		for(int i=0 ; i<numOfPhoneInfo ; i++) {

@@ -1,7 +1,6 @@
 package project1.ver03;
-import project1.ver03.PhoneBookManager;
-import project1.ver03.PhoneInfo;
-import java.util.Scanner;
+
+
 
 public class PhoneInfo
 {

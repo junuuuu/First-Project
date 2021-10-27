@@ -27,7 +27,10 @@ public class PhoneBookVer03
 	{
 		PhoneInfo pi3 = new PhoneInfo();
 		Scanner scanner = new Scanner(System.in);
-		PhoneBookManager pi4 = new PhoneBookManager();
+		
+		
+		
+		PhoneBookManager pi4 = new PhoneBookManager(100);
 		
 	
 		while(true) {
@@ -42,15 +45,18 @@ public class PhoneBookVer03
 				
 				break;
 			case 2:
-				pi3.showPhoneInfo();
+				pi4.dataSearch();
+				
 				break;
 			
 			case 3:
+				pi4.dataDelete();
 				
-				
+				break;
 			case 4:
+				pi4.dataAllshow();
 				
-				
+				break;
 			case 5:
 				System.out.println("프로그램을 종료합니다.");
 				return;
