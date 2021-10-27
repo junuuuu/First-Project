@@ -1,4 +1,4 @@
-package project1.ver03;
+package project1.ver04;
 
 import java.util.Scanner;
 
@@ -17,23 +17,34 @@ public class PhoneBookManager
 		 numOfPhoneInfo = 0;
 
 	}
+	//메뉴출력
+	public void menuShow() {
+		System.out.println("선택하세요");
+		System.out.println("1.데이터 입력 ");
+		System.out.println("2.데이터 검색");
+		System.out.println("3.데이터 삭제");
+		System.out.println("4.주소록 출력");
+		System.out.println("5.프로그램 종료");
+	}
 	//입력
-		public void dataInput(int choice) {
+	public void dataInput(int choice) {
 			
 		Scanner scan = new Scanner(System.in);
+
 		String name, phoneNumber, birthday;
 		System.out.print("이름:"); name = scan.nextLine();
 		System.out.print("전화번호:"); phoneNumber = scan.nextLine();
-		System.out.print("생년월일:"); birthday = scan.nextLine();
 		
-		System.out.println("데이터 입력이 완료되었습니다.");
+
 	//객체저장시키기
-		if(choice==1) {
+	if(choice==1) {
 			  
 			PhoneInfo pInfo = 
-					new PhoneInfo(name,phoneNumber,birthday);
+					new PhoneInfo(name,phoneNumber);
 			myPhoneInfo [numOfPhoneInfo++] = pInfo;
+		
 		}
+		System.out.println("데이터 입력이 완료되었습니다.");
 	}
 	
 	//검색
