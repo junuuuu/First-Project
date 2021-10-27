@@ -1,4 +1,4 @@
-package project1.ver04;
+package project1.ver05;
 
 class PhoneSchoolInfo extends PhoneInfo 
 {

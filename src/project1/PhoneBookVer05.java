@@ -6,7 +6,7 @@ import project1.ver04.PhoneBookManager;
 import project1.ver04.PhoneInfo;
 
 
-public class PhoneBookVer04
+public class PhoneBookVer05
 {
 	
 	public static void main(String[] args)
