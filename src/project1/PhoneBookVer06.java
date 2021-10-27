@@ -2,17 +2,19 @@ package project1;
 
 import java.util.Scanner;
 
-import project1.ver05.PhoneBookManager;
-import project1.ver05.PhoneInfo;
+import project1.ver06.PhoneBookManager;
+import project1.ver06.PhoneInfo;
+import project1.ver06.MenuSelectException;
 
 
-public class PhoneBookVer05
+public class PhoneBookVer06 
 {
 	
 	public static void main(String[] args)
 	{
 		Scanner scanner = new Scanner(System.in);
 		PhoneBookManager pi4 = new PhoneBookManager(100);
+		
 		while(true) {
 			
 			pi4.menuShow();
