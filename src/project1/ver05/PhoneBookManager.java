@@ -1,7 +1,7 @@
 package project1.ver05;
 
 import java.util.Scanner;
-
+import project1.ver05.SubMenuItem;
 
 public class PhoneBookManager
 {
@@ -34,16 +34,16 @@ public class PhoneBookManager
 			System.out.println("1.일반 2.동창 3.회사");
 			System.out.println("선택>>"); select = scan.nextInt();
 			scan.nextLine();
-		
+	
 		
 		String name, phoneNumber, major, grade, companyName;
-		if(select==1) {
+		if(select==SubMenuItem.NOMAL) {
 			System.out.println("이름:"); name = scan.nextLine();
 			System.out.println("전화번호:"); phoneNumber = scan.nextLine();
 			
 			myPhoneInfo[numOfPhoneInfo++] = new PhoneInfo(name, phoneNumber);
 		}
-		else if(select==2) {
+		else if(select==SubMenuItem.SCHOOL) {
 			System.out.println("이름:"); name = scan.nextLine();
 			System.out.println("전화번호:"); phoneNumber = scan.nextLine();
 			System.out.println("전공:"); major=scan.nextLine();
@@ -51,7 +51,7 @@ public class PhoneBookManager
 
 			myPhoneInfo[numOfPhoneInfo++] = new PhoneSchoolInfo(name, phoneNumber, major, grade);
 		}
-		else if(select==3) {
+		else if(select==SubMenuItem.COMPANY) {
 			System.out.println("이름:"); name = scan.nextLine();
 			System.out.println("전화번호:"); phoneNumber = scan.nextLine();
 			System.out.println("회사명:"); companyName =scan.nextLine();

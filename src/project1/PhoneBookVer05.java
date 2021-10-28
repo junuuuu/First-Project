@@ -2,6 +2,7 @@ package project1;
 
 import java.util.Scanner;
 
+import project1.ver05.MenuItem;
 import project1.ver05.PhoneBookManager;
 import project1.ver05.PhoneInfo;
 
@@ -20,23 +21,23 @@ public class PhoneBookVer05
 			scanner.nextLine();
 		
 			switch(choice) {
-			case 1:
+			case MenuItem.INPUT:
 				pi4.dataInput(choice);
 				
 				break;
-			case 2:
+			case MenuItem.SEACRH:
 				pi4.dataSearch();
 				
 				break;
-			case 3:
+			case MenuItem.DELETE:
 				pi4.dataDelete();
 				
 				break;
-			case 4:
+			case MenuItem.PRINT:
 				pi4.dataAllshow();
 				
 				break;
-			case 5:
+			case MenuItem.EXIT:
 				System.out.println("프로그램을 종료합니다.");
 				
 				return;

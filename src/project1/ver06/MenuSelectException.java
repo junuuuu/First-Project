@@ -6,8 +6,4 @@ public class MenuSelectException extends Exception
 	{
 		super("6이상의 숫자를 입력하였습니다.");
 	}
-	
-	
-	
-	
 }

@@ -2,7 +2,7 @@ package project1.ver05;
 
 public interface MenuItem 
 {
-	
+	int INPUT =1, SEACRH=2, DELETE=3, PRINT=4, EXIT=5;
 	
  
 	
@@ -13,9 +13,7 @@ public interface MenuItem
 //	4.출력
 //	5.프로그램종료
 			
-//1.일반
-//2.학교동창
-//3.회사동료
+
 
 
 }
